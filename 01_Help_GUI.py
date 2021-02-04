@@ -32,6 +32,22 @@ class Converter:
         get_help = Help(self)
         get_help.help_text.configure(text="Help text goes here")
 
+class Help:
+    def __init__(self, partner):
+
+        background = "orange"
+
+        # disable help button
+        partner.help_button.config(state=DISABLED)
+
+        # Set up GUI Frame
+
+        # Set up Help Heading (row 0)
+
+        # Help text (label, row 1)
+
+        # Dismiss button (row 2)
+
 # main routine
 if __name__ == "__main__":
     root = Tk()
