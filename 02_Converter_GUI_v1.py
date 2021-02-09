@@ -16,11 +16,19 @@ class Converter:
 
         # Temperature Converter Heading (row 0)
         self.temp_heading_label = Label(self.converter_frame, text="Temperature Converter",
-                                        font="Arial 16 bold")
+                                        font="Arial 16 bold",
+                                        bg=background_color,
+                                        padx=10, pady=10)
 
-        
         # User instructions (row 1)
-
+        self.temp_instructions_label = Label(self.converter_frame,
+                                            text="Type in the amount to be converted and then push"
+                                                 "one of the button below...",
+                                            font="Arial 10 italic", wrap=250,
+                                            justify=LEFT, bg=background_color,
+                                            padx=10, pady=10)
+        self.temp_instructions_label.grid(row=1)
+        
         # Temperature entry box (row 2)
 
         # Conversion buttons frame (row 3)
