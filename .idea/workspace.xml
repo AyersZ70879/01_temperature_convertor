@@ -32,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_Converter_GUI_v1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="02_Converter_GUI_v1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02_Converter_GUI_v1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
@@ -40,6 +40,16 @@
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03_c_to_f_v1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03_c_to_f_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,6 +84,7 @@
         <option value="$PROJECT_DIR$/00_tkinter_template.py" />
         <option value="$PROJECT_DIR$/01_Help_GUI.py" />
         <option value="$PROJECT_DIR$/02_Converter_GUI_v1.py" />
+        <option value="$PROJECT_DIR$/03_c_to_f_v1.py" />
       </list>
     </option>
   </component>
@@ -444,6 +455,14 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_c_to_f_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
