@@ -1,4 +1,4 @@
-# This component is used to check that a users entered number is within given paramaters
+# This component is used to check that a users entered number is within given parameters
 
 
 # Temp Number Checker function
