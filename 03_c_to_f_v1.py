@@ -12,7 +12,7 @@ converted = []
 
 for item in temperatures:
     answer = to_f(item)
-    ans_statement = "{} degrees C is {} degrees F".format(item, answer)
+    ans_statement = "{:.2f} degrees C is {:.2f} degrees F".format(item, answer)
     converted.append(ans_statement)
 
 print(converted)
