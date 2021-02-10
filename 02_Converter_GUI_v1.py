@@ -41,11 +41,11 @@ class Converter:
         self.conversion_buttons_frame.grid(row=3, pady=10)
 
         self.to_c_button = Button(self.conversion_buttons_frame, text="To Centigrade", font="Arial 10 bold",
-                                  bg="Khaki1", padx=10, pady=10)
+                                  bg="Khaki1", padx=10, pady=10, command=lambda: self.temp_convert(-459))
         self.to_c_button.grid(row=0, column=0)
 
         self.to_f_button = Button(self.conversion_buttons_frame, text="To Fahrenheit", font="Arial 10 bold",
-                                  bg="Orchid1", padx=10, pady=10)
+                                  bg="Orchid1", padx=10, pady=10, command=lambda: self.temp_convert(-273))
         self.to_f_button.grid(row=0, column=1)
 
         # Answer label (row 4)
@@ -65,6 +65,32 @@ class Converter:
         self.help_button = Button(self.hist_help_frame, font="Arial 12 bold", text="Help",
                                   width=5)
         self.help_button.grid(row=0, column=1)
+
+    def temp_convert(self, to):
+        print(to)
+
+        # Retrieve amount entered into Entry field
+        to_convert = self.to_convert_entry.get()
+
+        try:
+            to_convert = float(to_convert)
+            print("yay")
+
+        except ValueError:
+            print("oops")
+
+        # Check amount is a valid number
+
+        # Convert to F
+
+        # Convert to C
+
+        # Round
+
+        # Display Answer
+
+        # Add Answer to list for History
+
 
 # main routine
 if __name__ == "__main__":
