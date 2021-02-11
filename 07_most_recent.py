@@ -17,3 +17,4 @@ print()
 
 print("*** The Most Recent 3 ***")
 # print items starting at the END of the list
+print()
