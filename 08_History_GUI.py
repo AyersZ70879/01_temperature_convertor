@@ -11,8 +11,7 @@ class Converter:
         background_color = "light blue"
 
         # In actual program this is blank and is populated with user calculations
-        self.all_calc_list = ['this is a string, '
-                              'this is a string']
+        self.all_calc_list = ['this is a string' ,  'this is a string']
 
         # Converter Main Screen GUI...
         self.converter_frame = Frame(width=600, height=600, bg=background_color, pady=10)
@@ -61,7 +60,7 @@ class History:
         # History text (label, row 1)
         self.history_text = Label(self.history_frame, text="Here are your most recent "
                                                                "calculations. Please use the "
-                                                               "export button to create a text file"
+                                                               "export button to create a text file "
                                                                "of all your calculations for this "
                                                                "session",
                                       justify=LEFT, width=40, bg=background, wrap=250)
