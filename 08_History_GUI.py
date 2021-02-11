@@ -86,6 +86,7 @@ class History:
                                 font="Arial 12", justify=LEFT)
         self.calc_label.grid(row=2)
 
+
         # Export / Dismiss Buttons Frame (row 3)
         self.export_dismiss_frame = Frame(self.history_frame)
         self.export_dismiss_frame.grid(row=3, pady=10)
