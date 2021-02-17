@@ -269,7 +269,8 @@ class Export:
         self.save_dismiss_frame.grid(row=4, pady=10)
 
         # Save Button
-        self.save_button = Button(self.save_dismiss_frame, text="Save")
+        self.save_button = Button(self.save_dismiss_frame, text="Save",
+                                  command=partial(lambda: self.save_history(partner, calc_history)))
         self.save_button.grid(row=0, column=0)
 
         self.cancel_button = Button(self.save_dismiss_frame, text="Cancel",
