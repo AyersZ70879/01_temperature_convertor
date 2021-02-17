@@ -28,9 +28,7 @@ class Converter:
         self.export_button.grid(row=1)
 
     def export(self):
-        print("You asked to export")
         get_export = Export(self)
-        get_export.export_text.configure(text="Export text goes here")
 
 
 if __name__ == '__main__':
@@ -61,19 +59,19 @@ if __name__ == '__main__':
 
             # Export text (label, row 1)
             self.export_text = Label(self.export_frame, text="Enter a filename "
-                                                             "in the box below"
-                                                             "and press the Save"
-                                                             "button to save your"
-                                                             "calculation history"
+                                                             "in the box below "
+                                                             "and press the Save "
+                                                             "button to save your "
+                                                             "calculation history "
                                                              "to a text file",
                                      justify=LEFT, width=40, bg=background, wrap=250)
             self.export_text.grid(column=0, row=1)
 
             # Warning text (label, row 2)
             self.export_text = Label(self.export_frame, text="If the filename "
-                                                             "you enter below"
-                                                             "already exists"
-                                                             "its contents will be replaced"
+                                                             "you enter below "
+                                                             "already exists "
+                                                             "its contents will be replaced "
                                                              "with your calculation "
                                                              "history", justify=LEFT, bg="#ffafaf",
                                      fg="maroon", font="Arial 10 italic", wrap=225, padx=10, pady=10)
@@ -85,7 +83,7 @@ if __name__ == '__main__':
 
             # Save / Cancel Buttons Frame (row 4)
             self.save_dismiss_frame = Frame(self.export_frame)
-            self.save_dismiss_frame.grid(row=3, pady=10)
+            self.save_dismiss_frame.grid(row=4, pady=10)
 
             # Save Button
             self.save_button = Button(self.save_dismiss_frame, text="Save")

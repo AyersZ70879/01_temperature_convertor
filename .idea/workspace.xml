@@ -20,11 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="01_Help_GUI.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="01_Help_GUI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01_Help_GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+            <state relative-caret-position="232">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10_Export_GUI.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10_Export_GUI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -140,6 +152,7 @@
         <option value="$PROJECT_DIR$/02_Converter_GUI_v1.py" />
         <option value="$PROJECT_DIR$/09_Assembled_Components.py" />
         <option value="$PROJECT_DIR$/10_Export_GUII.py" />
+        <option value="$PROJECT_DIR$/10_Export_GUI.py" />
       </list>
     </option>
   </component>
@@ -206,24 +219,7 @@
       <recent name="C:\Users\ayersz70879\OneDrive - Massey High School\Documents\2021\COM301\01_Programming\01_temp_convertor_general\01_temperature_convertor" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.10_Export_GUII">
-    <configuration default="false" name="02_Converter_GUI_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01_temperature_convertor" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_Converter_GUI_v1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.10_Export_GUI">
     <configuration default="false" name="07_most_recent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,6 +284,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="01_temperature_convertor" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10_Export_GUII.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="10_Export_GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="01_temperature_convertor" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10_Export_GUI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -427,19 +440,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.02_Converter_GUI_v1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.07_most_recent" />
-      <item index="2" class="java.lang.String" itemvalue="Python.08_History_GUI" />
-      <item index="3" class="java.lang.String" itemvalue="Python.09_Assembled_Components" />
-      <item index="4" class="java.lang.String" itemvalue="Python.10_Export_GUII" />
+      <item index="0" class="java.lang.String" itemvalue="Python.07_most_recent" />
+      <item index="1" class="java.lang.String" itemvalue="Python.08_History_GUI" />
+      <item index="2" class="java.lang.String" itemvalue="Python.09_Assembled_Components" />
+      <item index="3" class="java.lang.String" itemvalue="Python.10_Export_GUII" />
+      <item index="4" class="java.lang.String" itemvalue="Python.10_Export_GUI" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.10_Export_GUII" />
-        <item index="1" class="java.lang.String" itemvalue="Python.09_Assembled_Components" />
-        <item index="2" class="java.lang.String" itemvalue="Python.08_History_GUI" />
-        <item index="3" class="java.lang.String" itemvalue="Python.07_most_recent" />
-        <item index="4" class="java.lang.String" itemvalue="Python.02_Converter_GUI_v1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.10_Export_GUI" />
+        <item index="1" class="java.lang.String" itemvalue="Python.10_Export_GUII" />
+        <item index="2" class="java.lang.String" itemvalue="Python.09_Assembled_Components" />
+        <item index="3" class="java.lang.String" itemvalue="Python.08_History_GUI" />
+        <item index="4" class="java.lang.String" itemvalue="Python.07_most_recent" />
       </list>
     </recent_temporary>
   </component>
@@ -840,8 +853,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01_Help_GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+        <state relative-caret-position="232">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_Export_GUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
