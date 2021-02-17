@@ -191,14 +191,14 @@ class History:
                                 font="Arial 12", justify=LEFT)
         self.calc_label.grid(row=2)
 
-
         # Export / Dismiss Buttons Frame (row 3)
         self.export_dismiss_frame = Frame(self.history_frame)
         self.export_dismiss_frame.grid(row=3, pady=10)
 
         # Export Button
-        self.export_dismiss_button = Button(self.export_dismiss_frame, text="Export", font="Arial 12 bold")
-        self.export_dismiss_button.grid(row=0, column=0)
+        self.export_button = Button(self.export_dismiss_frame, text="Export", font="Arial 12 bold",
+                                    command=lambda: self.export(self.calc_history))
+        self.export_button.grid(row=0, column=0)
 
         # Dismiss Button
         self.dismiss_button = Button(self.export_dismiss_frame, text="Dismiss", font="Arial 12 bold",
@@ -209,6 +209,77 @@ class History:
         # Put history button back to normal...
         partner.history_button.config(state=NORMAL)
         self.history_box.destroy()
+
+    def export(self, calc_history):
+        Export(self, calc_history)
+
+
+class Export:
+    def __init__(self, partner, calc_history):
+
+        print(calc_history)
+
+        background = "#a9ef99"
+
+        # disable export button
+        partner.export_button.config(state=DISABLED)
+
+        # Sets up child window (ie: export box)
+        self.export_box = Toplevel()
+
+        # If users press the cross at top, closes export and 'releases' export button
+        self.export_box.protocol('WM_DELETE_WINDOW', partial(self.close_export, partner))
+
+        # Set up GUI Frame
+
+        self.export_frame = Frame(self.export_box, bg=background)
+        self.export_frame.grid()
+
+        # Set up export Heading (row 0)
+        self.how_heading = Label(self.export_frame, text="Export History", font="arial 14 bold",
+                                         bg=background)
+        self.how_heading.grid(row=0)
+
+        # Export text (label, row 1)
+        self.export_text = Label(self.export_frame, text="Enter a filename "
+                                                                 "in the box below "
+                                                                 "and press the Save "
+                                                                 "button to save your "
+                                                                 "calculation history "
+                                                                 "to a text file",
+                                         justify=LEFT, width=40, bg=background, wrap=250)
+        self.export_text.grid(column=0, row=1)
+
+        # Warning text (label, row 2)
+        self.export_text = Label(self.export_frame, text="If the filename "
+                                                                 "you enter below "
+                                                                 "already exists "
+                                                                 "its contents will be replaced "
+                                                                 "with your calculation "
+                                                                 "history", justify=LEFT, bg="#ffafaf",
+                                         fg="maroon", font="Arial 10 italic", wrap=225, padx=10, pady=10)
+        self.export_text.grid(row=2, pady=10)
+
+        # Filename Entry Box (row 3)
+        self.filename_entry = Entry(self.export_frame, width=20, font="Arial 14 bold", justify=CENTER)
+        self.filename_entry.grid(row=3, pady=10)
+
+        # Save / Cancel Buttons Frame (row 4)
+        self.save_dismiss_frame = Frame(self.export_frame)
+        self.save_dismiss_frame.grid(row=4, pady=10)
+
+        # Save Button
+        self.save_button = Button(self.save_dismiss_frame, text="Save")
+        self.save_button.grid(row=0, column=0)
+
+        self.cancel_button = Button(self.save_dismiss_frame, text="Cancel",
+                                    command=partial(self.close_export, partner))
+        self.cancel_button.grid(row=0, column=1)
+
+    def close_export(self, partner):
+        # Put export button back to normal...
+        partner.export_button.config(state=NORMAL)
+        self.export_box.destroy()
 
 # main routine
 if __name__ == "__main__":
