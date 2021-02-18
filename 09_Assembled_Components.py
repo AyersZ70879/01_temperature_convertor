@@ -206,7 +206,7 @@ class History:
 
         # Export Button
         self.export_button = Button(self.export_dismiss_frame, text="Export", font="Arial 12 bold",
-                                    command=lambda: self.export(self.calc_history))
+                                    command=lambda: self.export(calc_history))
         self.export_button.grid(row=0, column=0)
 
         # Dismiss Button
@@ -260,8 +260,7 @@ class Export:
         self.export_text.grid(column=0, row=1)
 
         # Warning text (label, row 2)
-        self.export_text = Label(self.export_frame, text="If the filename you enter below "
-                                                                 "already exists "
+        self.export_text = Label(self.export_frame, text="If the filename you enter below already exists "
                                                                  "its contents will be replaced "
                                                                  "with your calculation "
                                                                  "history", justify=LEFT, bg="#ffafaf",
@@ -293,7 +292,7 @@ class Export:
     def save_history(self, partner, calc_history):
 
         # Regular expression to check filename is valid
-        valid_char = "[A-Za=z0-9_]"
+        valid_char = "[A-Za-z0-9_]"
         has_error = "no"
 
         filename = self.filename_entry.get()
